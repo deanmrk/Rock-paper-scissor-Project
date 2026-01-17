@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #1B2021;
+    font-family: poppins;
+    color: #ffff;
+    margin: 0%;
+    text-align: center;
+}
+.moveImg {
+    width: 70px;
+    margin: 5px;
+}
+.moveBtn {
+    border: 2px solid #E3DC95;
+    padding: 5px;
+    background-color: #E3DCC2;
+    cursor: pointer;
+    border-radius: 100%;
+    margin: 5px;
+    transition: .3s ease-out;
+}
+.moveBtn:hover {
+    background-color: #d2caae;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(84, 84, 84, 0.4);
+}
+.js-moves {
+    width: 40px;
+}
+.paper, .rock {
+    transform: scale(0.8);
+}
+.container {
+    
+}
+.main-container {
+    background-color: #E3DC95;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(209, 209, 209, .9);
+    padding: 10px;
+    width: 350px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+span {
+    color: #0b6f83;
+}
+.result, .moves, .score {
+    color: #414141;
+    text-transform: capitalize;
+}
+.resetButton, .autoPlayButton {
+    cursor: pointer;
+    border: none;
+    background-color: #51513D;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s ease-out;
+}
+.resetButton:hover {
+    background-color: #70705b;
+    transition: .3s ease-in-out;
+}
+.autoPlayButton {
+    background-color: #0b6f83;
+}
+.autoPlayButton:hover {
+    background-color: #248ba0;
+    transition: .3s ease-in-out;
+}
+.autoPlayButton:active {
+    background-color: #248ba0;
+    transition: .3s ease-in-out;
+}
+.resetButton:active {
+    background-color: #70705b;
+    transition: .3s ease-in-out;
+}
+.playToggle {
+    background-color: rgb(191, 43, 43);
+    transition: .3s ease-out;
+}
+.playToggle:hover {
+    background-color: rgb(120, 17, 17);
+    transition: .3s ease-in-out;
+}
+
+.popup {
+    background-color: #E3DCC2;
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 20px;
+}
+
+.main-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.js-input, .okayButton {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: poppins;
+    gap: 15px;
+}
+.okayButton {
+    background-color: #A6A867;
+}
+
+main {
+    display: none;
+}
+.toggleMain {
+    display: grid;
+}
+
+.removeForm {
+    display: none;
+}
+
+.nameSpan {
+    color: green;
+}

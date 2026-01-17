@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-popup">
+        <div class="popup">
+            <input type="text" placeholder="Enter your name" class="js-input">
+            <button class="okayButton" onclick="addName()">Okay</button>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="main-container">
+            <div class="container">
+            <button class="btnRock moveBtn" onclick="playerMove('rock')"><img src="images/rock.png" class="moveImg rock"></button>
+            <button class="btnPaper moveBtn" onclick="playerMove('paper')"><img src="images/paper.png" class="moveImg paper"></button>
+            <button class="btnScissor moveBtn" onclick="playerMove('scissor')"><img src="images/scissor.png" class="moveImg"></button>
+        </div>
+        
+        <div class="container-1">
+            <p class="result"></p>
+            <p class="moves"></p>
+            <p class="score"></p>
+        </div>
+
+        <div class="container-2">
+            <button class="resetButton" onclick="reset()">Reset Score</button>
+            <button class="autoPlayButton" onclick="autoPlay()">Auto Play</button>
+        </div>
+        </div>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>

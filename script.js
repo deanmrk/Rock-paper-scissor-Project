@@ -40,10 +40,10 @@ function playerMove(move) {
             result = 'Tie';
         }
         else if (computer === 'paper') {
-            result = 'You win'
+            result = 'You Lose'
         }
         else if (computer === 'scissor') {
-            result = 'You lose'
+            result = 'You win'
         }
     }
     else if (move === 'paper') {
@@ -137,6 +137,25 @@ function addName() {
         nameArray.push(getInput);
     }
     input.value = '';
-
-    console.log(nameArray);
 }
+
+const btnRock = document.querySelector('.btnRock');
+const btnPaper = document.querySelector('.btnPaper');
+const btnScissor = document.querySelector('.btnScissor');
+const btnReset = document.querySelector('.resetButton');
+
+btnRock.addEventListener('click', () => {
+    playerMove('rock');
+});
+btnPaper.addEventListener('click', () => {
+    playerMove('paper');
+});
+btnScissor.addEventListener('click', () => {
+    playerMove('scissor');
+});
+btnReset.addEventListener('click', () => {
+    reset();
+});
+autoPlayBtn.addEventListener('click', () => {
+    autoPlay();
+});

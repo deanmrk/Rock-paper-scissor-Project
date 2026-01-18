@@ -30,9 +30,6 @@ body {
 .paper, .rock {
     transform: scale(0.8);
 }
-.container {
-    
-}
 .main-container {
     background-color: #E3DC95;
     border-radius: 10px;
@@ -51,12 +48,17 @@ main {
     margin-top: 20vh;
 }
 span {
-    color: #0b6f83;
+    color: #969696;
+    gap: 15px;
+    margin: 5px;
 }
 .result, .moves, .score {
     color: #414141;
     text-transform: capitalize;
 }
+ .score {
+    padding: 10px;
+ }
 .resetButton, .autoPlayButton {
     cursor: pointer;
     border: none;
@@ -131,5 +133,5 @@ main {
 }
 
 .nameSpan {
-    color: green;
+    color: rgb(70, 53, 184);
 }
